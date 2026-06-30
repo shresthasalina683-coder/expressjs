@@ -3,7 +3,6 @@ import { create, getAll, getById, remove, update } from "../controllers/category
 
 const router = express.Router();
 
-//const category = [];
 
 //crud category
 //get all

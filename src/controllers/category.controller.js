@@ -1,3 +1,6 @@
+const category = [];
+
+
 export const getAll = (req, res) =>{
    
 
@@ -44,7 +47,7 @@ category.push({
  res.status(201).json({
     message: "category created",
     success: true,
-    date:categories[category.length - 1]
+    date:category[category.length - 1]
    });
 };
 

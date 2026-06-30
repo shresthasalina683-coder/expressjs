@@ -1,3 +1,5 @@
+const products = [];
+
 export const getAll = (req, res) =>{
    // res.send("<h1>All product</h1>");
    
@@ -49,7 +51,7 @@ products.push({
  res.status(201).json({
     message: "product created",
     success: true,
-    date:product[products.length - 1]
+    date:products[products.length - 1]
    });
 };
 

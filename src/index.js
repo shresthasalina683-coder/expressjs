@@ -4,6 +4,7 @@ import http from "http";
 import express from "express";
 import userRoutes from "./routes/user.routes.js"
 import productRoutes from "./routes/product.routes.js"
+import categoryRoutes from "./routes/category.routes.js"
 
 //creating express app instance
 const app = express();
@@ -31,7 +32,7 @@ app.get("/", (req, res) => {
 //using routes
 app.use("/users", userRoutes);
 app.use("/products", productRoutes);
-
+app.use("/category", categoryRoutes);
 
 
 
@@ -98,3 +99,7 @@ server.listen(8081, 'localhost', ()=>{
    //resource
    // dashboard => {}
    //users => json, html, xml
+
+
+   //middleware(imp topic)
+   //mongodb

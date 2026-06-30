@@ -1,3 +1,5 @@
+const users = [];
+
 export const getAll = (req, res) =>{
    // res.send("<h1>All Users</h1>");
    const query = req.query;
